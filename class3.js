@@ -142,13 +142,100 @@
 //**
 //*
 
-let numberOfLines = 6;
+// let numberOfLines = 6;
 
-for (let i = 1; i < numberOfLines; i++) {
-  let line = ""; // we are making a empty string
-  for (let j = 1; j <= i; j++) {
-    line = line + "*"; // here we are adding two string empty + "*"
-  }
-  console.log(line);
+// for (let i = 1; i < numberOfLines; i++) {
+//   let line = ""; // we are making a empty string
+//   for (let j = 1; j <= i; j++) {
+//     line = line + "*"; // here we are adding two string empty + "*"
+//   }
+//   console.log(line);
+// }
+
+// ARRAYS - IN JAVASCRIPT
+// let birds = ["eagle", "peacock", "parrot"];
+
+// for (let i = 0; i < 3; i ++) {
+//   console.log(birds[i])
+// }
+
+// in case if we don't know the size, how we will print all the array values?
+// in that case we will use array function -> length
+// for (let i = 0; i < birds.length; i ++) {
+//   console.log(birds[i])
+// }
+
+// if we want to insert a new value in the array
+// we can use push function
+
+// birds.push("owl")
+// console.log("-------------before removing the owl----------------")
+// for (let i = 0; i < birds.length; i ++) {
+//   console.log(birds[i])
+// }
+
+// birds.pop("owl")
+
+// console.log("------------after removing the owl------------------")
+// for (let i = 0; i < birds.length; i ++) {
+//   console.log(birds[i])
+// }
+
+// If we want to delete a value from the given index from an array, we can use 
+// splice function and we have to pass two things in the array -> (start index, 1)
+
+// console.log("------------after removing two values from the index 0------------------")
+// birds.splice(0, 2)
+// for (let i = 0; i < birds.length; i ++) {
+//   console.log(birds[i])
+// }
+
+
+// functions
+// Let's the function without input / arguments
+// function printMyName() { // defining the function here
+//   console.log("function is being called...");
+// }
+
+// printMyName(); // calling the function here
+
+// Let's the function with input / arguments
+// function printMyName(myName) { // defining the function here
+//   console.log(myName);
+// }
+
+// function login(userEmail, password) {
+//   // logic to let user login in the system
+//   if (userEmail === "chinmayanand896@icloud.com" && password === "chinmay") {
+//     console.log("you can login...")
+//   } else {
+//     console.log("you are not allowed to login...")
+//   }
+// }
+
+// // function with default values / input / arguments
+// function login(userEmail = "chinmayanand896@icloud.com" , password = "chinmay") {
+//   // logic to let user login in the system
+//   if (userEmail === "chinmayanand896@icloud.com" && password === "chinmay") {
+//     console.log("you can login...")
+//   } else {
+//     console.log("you are not allowed to login...")
+//   }
+// }
+
+//  a function which returns some value
+// function returnMyName () {
+//   let myName = "japanese";
+//   return myName;
+// }
+
+//  a function which returns some value
+function add (num1, num2) {
+  let result = num1 + num2;
+  return result;
 }
 
+let additionResult = add(11, 5); // here we are saving the result in a variable so later we can use 
+// the variable to use the result returned by the function
+
+console.log(additionResult);

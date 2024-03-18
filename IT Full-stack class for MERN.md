@@ -444,3 +444,122 @@ while (true) { // infinte while loop (this will never ends unless we don't to it
 	// repeat the loop
 }
 ```
+
+Class 6 （木）
+### Javascript Arrays and Object
+> array -> It is like a box to hold more than one variable of same type
+
+```
+let x = 2;
+console.log(x);
+
+so maintain a list of same data type variables we can use array.
+```
+
+In order to use an array ->
+1. Create the array
+2. Fill the array (values)
+3. Use the array
+
+Create the array ->
+In javascript to create an array we need to use the square brackets [] and separate the items using a comma.
+
+```
+let birds = ["owl", "eagle", "peacock", "parror"]
+
+let sweets = ["gulab jamun", "jalebi", "laddu"]
+```
+
+[ ] [ ] [ ] [ ] [ ] [ ]
+
+Array index is like locker no, if you know the locker no, you can directly access the things in that locker.
+So we can access the value from an array directly if we know the index. And array index always starts from 0.
+“Owl” = 0
+“Eagle” = 1
+“Peacock” = 3
+“Parrot” = 4
+
+NOTE: In javascript we assign multiple types in a single array, (but we don’t do this because its not a good practice)
+
+NOTE: We can also declare an empty array without any value.
+```
+let birds = [];
+```
+
+> How to access the values in the array with index
+
+```
+let birds = ["owl", "eagle", "peacock", "parror"]
+console.log(birds[2]) -> "peacock"
+console.log(birds[1]) -> "eagle"
+.
+.
+```
+
+NOTE: to access all the values in the array we need to use loop. So we don’t have to do it manually one by one.
+
+> How to access the values in array with loop
+
+```
+let birds = ["owl", "eagle", "peacock", "parror"]
+for (let i = 0; i < 4; i ++) {
+	console.log(birds[i]);
+}
+```
+
+### Array methods
+> length, push, pop
+
+### Functions in Javascript
+> function is simple a piece / section of code which we use to perform a specific task and then we can re-use it.
+
+Ex -> To add two numbers, we need a code. 
+```
+let a = 5;
+let b = 6;
+
+let c = a + b;
+
+console.log(c) -> 11
+
+11, 12
+
+let x = 11; 
+let y = 12;
+
+let z = x + y;
+
+console.log(z) -> 23
+
+```
+
+> Create a function in Javascript (Task of this function is to take two values and add them then print them
+
+```
+function <name of the function> (let a, let b) {
+	let c = a + b;
+	console.log(c); -> a + b
+}
+```
+
+> Using a function
+
+```
+<name of the function> (5, 6); 
+```
+
+> a real time function example
+
+```
+function sendMessage(let contactName, let message) {
+	console.log("Message sent");
+}
+```
+
+```
+sendMessage("chinmay", "Hello");
+```
+
+In further lesson we will learn how to control calling a function. 
+1. Define (to tell the function what to do)
+2. Calling a function (to use the function)
