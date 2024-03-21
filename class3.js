@@ -181,7 +181,7 @@
 //   console.log(birds[i])
 // }
 
-// If we want to delete a value from the given index from an array, we can use 
+// If we want to delete a value from the given index from an array, we can use
 // splice function and we have to pass two things in the array -> (start index, 1)
 
 // console.log("------------after removing two values from the index 0------------------")
@@ -189,7 +189,6 @@
 // for (let i = 0; i < birds.length; i ++) {
 //   console.log(birds[i])
 // }
-
 
 // functions
 // Let's the function without input / arguments
@@ -229,13 +228,124 @@
 //   return myName;
 // }
 
-//  a function which returns some value
-function add (num1, num2) {
-  let result = num1 + num2;
-  return result;
-}
+// //  a function which returns some value
+// function add (num1, num2) {
+//   let result = num1 + num2;
+//   return result;
+// }
 
-let additionResult = add(11, 5); // here we are saving the result in a variable so later we can use 
+// let additionResult = add(11, 5); // here we are saving the result in a variable so later we can use
 // the variable to use the result returned by the function
 
-console.log(additionResult);
+// console.log(additionResult);
+
+// OBJECTs Practice
+// let person = { // this is a person object
+//   name: "Chinmay",
+//   address: "Japan, Kawasaki",
+//   phoneNo: "070-1111111",
+// }
+
+// // add a new property / key-value pair / attribute
+// person.age = 28
+
+// // modify the values in a object
+// person.age = 29
+
+// delete person.age
+
+// // check if a key is present in the obejct
+// if ("age" in person) {
+//   console.log("age is already present in object");
+// } else {
+//   person.age = 28;
+//   console.log(person)
+// }
+
+// try to add an array to an object
+// let job = {
+//   title: "Software developer",
+//   location: "Japan",
+//   skills: ["java", "c++", "golang", "frontend"],
+// }
+
+// // let's try array functions
+// let foods = ["osushi", "ramen", "takoyaki", "udon"]
+
+// // to add a new value to foods array
+// foods.push("tenpura")
+
+// // to get a value from the last of the array
+// let value = foods.pop()
+// console.log(foods)
+// console.log(value)
+
+// define objects in the array
+
+// let foods = [
+//   {
+//     title: "osushi",
+//     ingredients: "rice and fish"
+//   },
+//   {
+//     title: "ramen",
+//     ingredients: "pork"
+//   },
+//   {
+//     title: "tenpura",
+//     ingredients: "vegies"
+//   },
+//   {
+//     title: "okonomiyaki",
+//     ingredients: "eggs, vegies, pork"
+//   },
+// ];
+
+// MAP function for array (we use it to map over the array)
+// foods.map((food) => console.log(food))\
+
+let todos = [
+  {
+    title: "Grocery Shopping",
+    description:
+      "Buy milk, eggs, bread, and cheese from the local supermarket.",
+    startTimings: "8AM"
+  },
+  {
+    title: "Read Book",
+    description: "Finish reading 'The Alchemist' by Paulo Coelho.",
+    startTimings: "5AM"
+  },
+  {
+    title: "Exercise",
+    description: "Complete a 30-minute workout session at the gym.",
+    startTimings: "10AM"
+  },
+  {
+    title: "Call Mom",
+    description: "Catch up with mom over a phone call in the evening.",
+    startTimings: "11AM"
+  },
+  {
+    title: "Work on Project",
+    description:
+      "Spend 2 hours developing the new feature for the web application.",
+    startTimings: "9AM"
+  }
+];
+
+todos.map((todo) => {
+  if (todo.startTimings === "8AM") {
+    console.log(todo.title)
+  } else {
+    console.log(todo.startTimings)
+  }
+})
+
+// Write a program to extract all the timings for an todo where the title is "Exercise" and push
+// it into an array and print the array after the loop ends (map function loop ends).
+
+// 1. declare an empty array
+// 2. loop over the todos array and put an if-else condtion to check if the title of an todo
+// is equals to "Exercise", if it's true then push the timing of todo in the array
+// 3. After the loops ends just print the array with console.log
