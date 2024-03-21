@@ -322,9 +322,9 @@ let todos = [
     startTimings: "10AM"
   },
   {
-    title: "Call Mom",
-    description: "Catch up with mom over a phone call in the evening.",
-    startTimings: "11AM"
+    title: "Exercise",
+    description: "Complete a 20-minute workout session again.",
+    startTimings: "4PM"
   },
   {
     title: "Work on Project",
@@ -344,8 +344,3 @@ todos.map((todo) => {
 
 // Write a program to extract all the timings for an todo where the title is "Exercise" and push
 // it into an array and print the array after the loop ends (map function loop ends).
-
-// 1. declare an empty array
-// 2. loop over the todos array and put an if-else condtion to check if the title of an todo
-// is equals to "Exercise", if it's true then push the timing of todo in the array
-// 3. After the loops ends just print the array with console.log
